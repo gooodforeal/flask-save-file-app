@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Парсинг данных</title>
+</head>
+<body>
+  <h1>Парсинг данных</h1>
+
+  <form method="POST" action="/">
+    <label for="startDate">Дата начала:</label>
+    <input type="date" id="startDate" name="startDate">
+
+    <label for="endDate">Дата окончания:</label>
+    <input type="date" id="endDate" name="endDate">
+
+    <label for="format">Формат сохранения:</label>
+    <select id="format" name="format">
+      <option value="csv">CSV</option>
+      <option value="json">JSON</option>
+      <option value="xml">XML</option>
+    </select>
+
+    <button type="submit">Скачать данные</button>
+  </form>
+</body>
+</html>
